@@ -1,0 +1,18 @@
+{
+  "name": "reto-sophos",
+  "version": "1.0.0",
+  "description": "Reto Automatizacion",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress open"
+  },
+  "author": "Andres Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adga010/repo_sophos"
+  }
+}
