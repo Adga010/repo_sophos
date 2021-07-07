@@ -1,0 +1,7 @@
+{
+    "password": "#password",
+    "confirmar_psw": "#confirmPassword",
+    "check01": ":nth-child(4) > .input-check-box > .checkmark",
+    "check02": ":nth-child(5) > .input-check-box > .checkmark",
+    "check03": ":nth-child(6) > .input-check-box > .checkmark"
+}

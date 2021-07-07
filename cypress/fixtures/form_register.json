@@ -1,0 +1,9 @@
+{
+    "nombre": "#firstName",
+    "apellido": "#lastName",
+    "email": "#email",
+    "mes": "#birthMonth",
+    "dia": "#birthDay",
+    "ano": "#birthYear",
+    "lenguaje": ".ui-select-search"
+}

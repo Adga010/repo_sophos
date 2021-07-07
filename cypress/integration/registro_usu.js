@@ -1,0 +1,37 @@
+describe('Registro de usuario', () => {
+    it('Ingreso al portal', () => {
+        cy.visit('/')
+        cy.fixture("index").then((index) => {
+            cy.get(index.ButtonRegister).click()
+        })
+        cy.fixture("form_register").then((form) => {
+            cy.get(form.nombre).type('Carlos')
+            cy.get(form.apellido).type('Fernandez')
+            cy.get(form.email).type('cfer@pru.com')
+            cy.get(form.mes).select('number:5').should('have.value', 'number:5')
+            cy.get(form.dia).select('number:8').should('have.value', 'number:8')
+            cy.get(form.ano).select('number:2000').should('have.value', 'number:2000')
+            cy.get(form.lenguaje).type('Arabic {enter} Italian {enter}')
+            cy.get('.text-right > .btn').click()
+            cy.wait(3000)
+            cy.get('.next-step > .btn').click()
+        })
+        cy.fixture("form_disp").then((disp) => {
+            cy.get(disp.mobile01).click()
+            cy.get(disp.input01).type('Apple {enter}', { waitForAnimations: false })
+            cy.get(disp.mobile02).click()
+            cy.get(disp.input02).type('iPhone {enter}', { waitForAnimations: false })
+            cy.get(disp.mobile03).click()
+            cy.get(disp.input03).type('iOS {enter}', { waitForAnimations: false })
+            cy.get('.next-step > .btn').click()
+        })
+        cy.fixture("form_security").then((security) => {
+            cy.get(security.password).type("l$OfL5Imb!Tc")
+            cy.get(security.confirmar_psw).type("l$OfL5Imb!Tc")
+            cy.get(security.check01).click()
+            cy.get(security.check02).click()
+            cy.get(security.check03).click()
+            cy.get('#laddaBtn').click()
+        })
+    })
+})

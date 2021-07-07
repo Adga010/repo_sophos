@@ -1,0 +1,8 @@
+{
+    "mobile01": "#mobile-device > :nth-child(1) > .ui-select-box > .ui-select-container > .ui-select-match > .btn-default",
+    "input01": "input[aria-owns='ui-select-choices-6']",
+    "mobile02": "#mobile-device > :nth-child(2) > .ui-select-box > .ui-select-container > .ui-select-match > .btn-default",
+    "input02": "input[aria-owns='ui-select-choices-7']",
+    "mobile03": "#mobile-device > :nth-child(3) > .ui-select-box > .ui-select-container > .ui-select-match > .btn-default",
+    "input03": "input[aria-owns='ui-select-choices-8']"
+}
